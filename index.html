@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,9 @@
 </head>
 
 <body>
-    <div class="form">
-        <h1>Navneskilt</h1>
+    <section class="form-left">
+        <h1 class="h1">Navneskilt</h1>
+        <p class="p">Print dit eget</p>
 
         <h3>Om dig</h3>
         <input id="name" placeholder="Indtast navn">
@@ -30,28 +32,34 @@
         </button>
 
         <button class="print-btn" onclick="printCard()">Print / Download</button>
-    </div>
+    </section>
 
-       <div id="card" class="card">
-        <div class="img-box"></div>
+    <section class="form-right">
+        <div id="card" class="card">
+            <div class="top">
+                <div class="img-box"></div>
 
-        <h2 id="card-name">Navn</h2>
-        <div id="card-title">Titel</div>
-        <div id="card-org">Organisation</div>
+                <div class="right">
+                    <h2 id="card-name">Navn</h2>
+                    <div id="card-title">Titel</div>
+                    <div id="card-org">Organisation</div>
 
-        <div id="roleTag" class="role-tag">Studerende</div>
-
-        <div id="bottomColor" class="bottom" style="background:#c9ef9b;">
-            <div>
-                <strong>JobFestival</strong><br>
-                Sønderborg 2025
+                    <div id="roleTag" class="role-tag">Studerende</div>
+                </div>
             </div>
-            <div>
-                <img src="https://moodle.easv.dk/mod/resource/view.php?id=263078">
+            <div id="bottomColor" class="bottom" style="background:#c9ef9b;">
+                <div>
+                    <strong>JobFestival</strong><br>
+                    Sønderborg 2025
+                </div>
+                <div>
+                    <img src="Logo.png">
+                </div>
             </div>
         </div>
-    </div>
+    </section>
     <script src="script.js"></script>
+
 </body>
 
 </html>

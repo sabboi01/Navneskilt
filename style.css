@@ -1,32 +1,46 @@
 body {
     font-family: Inter, sans-serif;
-    display: flex;
-    gap: 40px;
-    padding: 40px;
-    background: white;
+   }
 
+.navneskilt-generator {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    max-width: 1280px;
+    margin: 0;
+    height: fit-content;
 }
 
 .form-left {
-    width: 400px;
+    background-color: white;
+    padding: 30px;
+}
+
+.form-right {
+    background-color: rgb(197, 195, 195);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
-.form-right {
-    width: 600px;
-    background-color: rgb(197, 195, 195);
-}
-.p {
+
+p {
     margin-top: 0px;
-    margin-bottom: 20px;
+
 }
 
 h1 {
     margin-bottom: 0px;
 }
+
+h3 {
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
 input {
-    width: 100%;
+    width:100%;
     padding: 12px;
-    margin: 8px 0;
+    margin-bottom: 16px;
     border: 2px solid #ccc;
     border-radius: 6px;
     font-size: 16px;
@@ -55,13 +69,10 @@ input {
 }
 
 .card {
-    margin-top: 100px;
-    height: fit-content;
-    width: fit-content;
     background: white;
-    border-radius: 20px;
-    margin-left: 100px;
-    gap: 100px;
+    width: 350px;
+    border-radius: 12px;
+
 }
 
 .top {
@@ -90,7 +101,7 @@ input {
 .bottom {
     margin-top: 20px;
     padding: 10px;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 12px 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -98,12 +109,23 @@ input {
 
 .print-btn {
     margin-top: 20px;
-    padding: 12px 18px;
+    padding: 8px 20px;
     font-size: 16px;
-    border: none;
+    border: 2px solid #ccc;
     border-radius: 6px;
     cursor: pointer;
-    background: black;
+    background: rgb(141, 141, 141);
+    color: white;
+}
+
+.reset-btn {
+    margin-top: 20px;
+    padding: 8px 20px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    background: rgb(141, 141, 141);
     color: white;
 }
 
@@ -111,12 +133,14 @@ input {
 
     .form-left {
 
- display: none;
-    }
-    .form-right {
-        background: none;
+        display: none;
     }
 
-   
+    .form-right {
+        background: none;
+        background-color: white;
+    }
+
+
 
 }

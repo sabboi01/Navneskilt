@@ -1,3 +1,6 @@
+//.addEventListener 
+//Lyt efter en bestemt hændelse på dette element — og kør en funktion, når hændelsen sker.
+//Det er JavaScripts måde at reagere på brugerens handlinger.
 
 document.getElementById("name").addEventListener("input", function () {
     document.getElementById("card-name").textContent =
@@ -22,4 +25,14 @@ function setRole(role, color) {
 
 function printCard() {
     window.print();
+}
+
+function resetCard() {
+    document.getElementById("name").value = "";
+    document.getElementById("title").value = "";
+    document.getElementById("org").value = "";
+
+    document.getElementById("card-name").textContent = "";
+    document.getElementById("card-title").textContent = "";
+    document.getElementById("card-org").textContent = "";
 }

@@ -10,9 +10,11 @@
 </head>
 
 <body>
+    <main class="navneskilt-generator">
     <section class="form-left">
         <h1 class="h1">Navneskilt</h1>
         <p class="p">Print dit eget</p>
+        
 
         <h3>Om dig</h3>
         <input id="name" placeholder="Indtast navn">
@@ -32,6 +34,9 @@
         </button>
 
         <button class="print-btn" onclick="printCard()">Print / Download</button>
+        <br>
+        <button class="reset-btn" onclick="resetCard()">Nulstil</button>
+
     </section>
 
     <section class="form-right">
@@ -58,6 +63,7 @@
             </div>
         </div>
     </section>
+    </main>
     <script src="script.js"></script>
 
 </body>

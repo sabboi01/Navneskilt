@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navneskilt generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="form">
+        <h1>Navneskilt</h1>
+
+        <h3>Om dig</h3>
+        <input id="name" placeholder="Indtast navn">
+        <input id="title" placeholder="Indtast titel">
+        <input id="org" placeholder="Indtast organisation">
+
+        <h3>Rolle</h3>
+
+        <button class="role-btn green" onclick="setRole('Studerende', '#c9ef9b')">
+            Studerende
+        </button>
+        <button class="role-btn purple" onclick="setRole('Underviser', '#d6c1f7')">
+            Underviser
+        </button>
+        <button class="role-btn blue" onclick="setRole('Virksomhed', '#b7eef3')">
+            Virksomhed
+        </button>
+
+        <button class="print-btn" onclick="printCard()">Print / Download</button>
+    </div>
+
+       <div id="card" class="card">
+        <div class="img-box"></div>
+
+        <h2 id="card-name">Navn</h2>
+        <div id="card-title">Titel</div>
+        <div id="card-org">Organisation</div>
+
+        <div id="roleTag" class="role-tag">Studerende</div>
+
+        <div id="bottomColor" class="bottom" style="background:#c9ef9b;">
+            <div>
+                <strong>JobFestival</strong><br>
+                Sønderborg 2025
+            </div>
+            <div>
+                <img src="https://moodle.easv.dk/mod/resource/view.php?id=263078">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
